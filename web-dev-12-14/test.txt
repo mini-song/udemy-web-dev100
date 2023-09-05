@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+Hello another commit
+=======
+Hello another a coomiit!!
+>>>>>>> feature
+
+and here we go with commit #2!
