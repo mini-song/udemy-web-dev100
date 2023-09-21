@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/web-dev27/style.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <form action="/web-dev27/" method="GET">
+      <label for="username">name</label>
+      <input
+        type="text"
+        name="user-name"
+        placeholder="user-name"
+        id="username"
+      />
+      <label for="useremail">user email</label>
+      <input
+        type="email"
+        name="user-email"
+        placeholder="user-email"
+        id="useremail"
+      />
+      <label for="userage">user age</label>
+      <input
+        type="number"
+        name="user-age"
+        placeholder="user-age"
+        id="userage"
+        step="5"
+      />
+      <label for="userpassword">user password</label>
+      <input
+        type="password"
+        name="user-password"
+        placeholder="user-password"
+        id="userpassword"
+      />
+      <label for="userbirthday">user birthday</label>
+      <input
+        type="date"
+        name="user-birthday"
+        placeholder="user-birthday"
+        id="userbirthday"
+      />
+      <hr>
+      <h2>
+        Choose one!
+      </h2>
+      <label for="verify-email">Email</label>
+      <input type="radio" name="verify" id="verify-email">
+      <label for ='verify-phone'>Phone</label>
+      <input type="radio" name="verify" id="verify-phone">
+
+      <button>click</button>
+    </form>
+  </body>
+</html>
