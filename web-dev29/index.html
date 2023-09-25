@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/web-dev29/styles.css" rel="stylesheet" />
+    <title>Form Challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/web-dev29/" method="GET">
+        <h2>How can we help you?</h2>
+        <div id="input-box-set">
+          <label for="user-name"> Your Name </label>
+          <input type="text" name="username" id="user-name" required />
+        </div>
+        <div id="input-box-set">
+          <label for="user-name"> Your E-Mail Address </label>
+          <input type="text" name="useremail" id="user-email" />
+        </div>
+        <div id="input-box-set">
+          <label for="user-number"> Your Phone Number </label>
+          <input type="text" name="usernumber" id="user-number" />
+        </div>
+        <div id="input-box-set">
+          <label for="user-message"> Your Message </label>
+          <textarea id="user-message" name="usermessage"></textarea>
+        </div>
+        <div id="input-box-set">
+          <label for="user-ref"> How did you find us? </label>
+          <select id="user-ref" name="userref">
+            <option value="Web search">Web search</option>
+            <option value="Web search">Web search</option>
+            <option value="Web search">Web search</option>
+          </select>
+        </div>
+
+        <div id="input-box-set">
+          <h2>How shoul we reply?</h2>
+          <div id="input-radio">
+            <input type="radio" value="callme" name="callme" />
+            <label id="callme">call me</label>
+          </div>
+        </div>
+        <div></div>
+        <div id="input-box-set"><input type="checkbox" /> Accept Terms</div>
+
+        <button type="reset">Clear</button>
+        <button>Submit</button>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
