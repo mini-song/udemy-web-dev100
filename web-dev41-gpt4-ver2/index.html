@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Tic, Tac, Toe</title>
+    <link rel="stylesheet" href="/web-dev41-gpt4-ver2/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Play Tic, Tac, Toe</h1>
+        <p>Built with HTML, CSS, JavaScript - and of course - lots of love!</p>
+    </header>
+
+    <main>
+        <div class="players">
+            <div class="player" data-player="1">
+                <h2>Player 1</h2>
+                <div class="player-name" id="player1Display">PLAYER NAME</div>
+                <div class="player-mark">X</div>
+                <button class="edit-btn" id="editButton1">Edit</button>
+            </div>
+
+            <div class="player" data-player="2">
+                <h2>Player 2</h2>
+                <div class="player-name" id="player2Display">PLAYER NAME</div>
+                <div class="player-mark">O</div>
+                <button class="edit-btn" id="editButton2">Edit</button>
+            </div>
+        </div>
+
+        <button id="restartButton">Start New Game</button>
+
+        <h2 id="turn">It's your turn <span id="currentPlayer">PLAYER NAME</span>!</h2>
+
+        <div class="board">
+            <div data-cell="0"></div>
+            <div data-cell="1"></div>
+            <div data-cell="2"></div>
+            <div data-cell="3"></div>
+            <div data-cell="4"></div>
+            <div data-cell="5"></div>
+            <div data-cell="6"></div>
+            <div data-cell="7"></div>
+            <div data-cell="8"></div>
+        </div>
+    </main>
+
+    <div id="overlay">
+        <div class="edit-overlay">
+            <h3>Edit Player Name</h3>
+            <input type="text" id="player1Name" placeholder="Enter Player 1's Name">
+            <input type="text" id="player2Name" placeholder="Enter Player 2's Name">
+            <button id="saveButton">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

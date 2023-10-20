@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="restartButton">다시 시작</button>
+        <button id="editButton">이름 편집</button>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <h2>플레이어 이름 설정</h2>
+            <label for="player1">Player 1: </label>
+            <input type="text" id="player1Name" placeholder="Player 1 이름 입력">
+            <label for="player2">Player 2: </label>
+            <input type="text" id="player2Name" placeholder="Player 2 이름 입력">
+            <button id="saveButton">저장</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
