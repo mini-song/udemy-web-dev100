@@ -1,0 +1,10 @@
+#carousel-example{
+    width: 100%;
+    max-width: 50rem;
+    height: 30rem;
+}
+
+#carousel-example img{
+    height: 30rem;
+    object-fit: contain;
+}
